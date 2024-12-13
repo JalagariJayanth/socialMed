@@ -1,0 +1,117 @@
+.profile-banner-container {
+  height: 169px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid rgba(165, 164, 164, 0.1);
+}
+.banner-image {
+  height: 169px;
+  width: 373px;
+  object-fit: cover;
+}
+.add-cover-text {
+  font-size: 16px;
+  color: #6b7280;
+  font-weight: 500;
+}
+.back-button {
+  position: absolute;
+  z-index: 10;
+  top: 15px;
+  left: 5px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.profile-img-container {
+  position: absolute;
+  left: 10px;
+  bottom: -45px;
+}
+
+.profile-img {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+}
+
+.edit-profile-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 8px;
+  width: 100%;
+  margin-top: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.edit-profile-button {
+  border-radius: 50px;
+  border: 1px solid #00000057;
+  padding: 8px 16px;
+  font-size: 12px;
+  width: 208px;
+  height: 32px;
+  background-color: transparent;
+  font-family: Karla;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.03px;
+  cursor: pointer;
+}
+.profile-info-container {
+  padding: 18px 18px 18px 10px;
+  width: 90%;
+}
+.user-name {
+  font-family: Karla;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 28.06px;
+}
+.my-posts {
+  font-family: Karla;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.04px;
+  color: #000000;
+}
+
+.add-post-button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  background-color: #000000;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  border: 1px solid #ffffff4f;
+  cursor: pointer;
+}
+
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  overflow-y: scroll;
+  height: 330px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.posts-container::-webkit-scrollbar {
+  display: none;
+}

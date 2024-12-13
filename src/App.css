@@ -1,0 +1,13 @@
+.background-container{
+  display: flex;
+  justify-content: center;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 365px;
+  box-shadow: 0 0 1px 1px rgba(165, 164, 164, 0.1);
+  position: relative;
+  height:100vh;
+}

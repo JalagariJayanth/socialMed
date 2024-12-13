@@ -1,0 +1,70 @@
+.edit-container {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  background-color: #f4f4f4;
+  top: 68px;
+  left: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.edit-bannerimg-container {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  background-color: #f4f4f4;
+  right: 13px;
+  bottom: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.profile-edit-input-container {
+  width: 90%;
+  margin-top: 55px;
+}
+.edit-profile-name {
+  font-family: Kumbh Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 17.36px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+.edit-inputs {
+  border: none;
+  outline: none;
+  border-bottom: 0.4px solid #000000;
+  width: 100%;
+  margin-top: 0px;
+  font-family: Kumbh Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17.36px;
+}
+.save-button {
+  margin-top: 190px;
+  padding: 30px;
+}
+.save-button-prop {
+  width: 328px;
+  height: 48px;
+  padding: 5px 16px 5px 16px;
+  border-radius: 36px;
+  background: #000000;
+  color: #fff;
+  font-family: Karla;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.7px;
+  cursor: pointer;
+}
+
+.bannerHideInput {
+  display: none;
+}

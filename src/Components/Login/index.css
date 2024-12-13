@@ -1,0 +1,75 @@
+.login-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  padding: 5px;
+  position: relative;
+  z-index: 0;
+}
+.login-grid-container img {
+  object-fit: cover;
+  border-radius: 5px;
+}
+.image-5 {
+  margin-top: -115px;
+}
+.image-8 {
+  margin-top: -109px;
+}
+
+.footer {
+  background-color: #fff;
+  border-top: 1px solid #eaeaea;
+  margin-top: -110px;
+  position: relative;
+  z-index: 1000;
+  width: 98%;
+  min-height: 180px;
+  border-top-left-radius: 54px;
+  border-top-right-radius: 54px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 46px;
+  height: 34px;
+}
+.logo-name {
+  font-family: "Karla";
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 32.73px;
+  text-align: left;
+  margin-left: 5px;
+}
+.tagline {
+  font-family: "Kumbh Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.84px;
+  text-align: left;
+  margin-top: 0px;
+}
+
+.google-button {
+  width: 232.59px;
+  height: 50px;
+  border-radius: 26px;
+  background: #292929;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.google-logo {
+  margin-right: 10px;
+}
