@@ -18,12 +18,13 @@ import { GrReddit } from "react-icons/gr";
 import { doc, getDoc, updateDoc } from "firebase/firestore";
 import { db } from "../../Firebase/config";
 
+const appLink = "https://socialmedia-vibesnap.onrender.com"
 const socialMediaLinks = [
   {
     platform: "Twitter",
     backgroundColor: "#E9F6FB",
     platformIcon: <FaTwitter size={40} color="#03A9F4" />,
-    platformUrl: "https://twitter.com/intent/tweet?url=POST_LINK",
+    platformUrl: `https://twitter.com/intent/tweet?url=${appLink}`,
   },
   {
     platform: "Facebook",
@@ -47,7 +48,7 @@ const socialMediaLinks = [
     platform: "WhatsApp",
     backgroundColor: "#E7FBF0",
     platformIcon: <RiWhatsappFill size={40} color="#67C15E" />,
-    platformUrl: "https://wa.me/?text=Check this out: POST_LINK",
+    platformUrl: `https://wa.me/?text=Check this out:${appLink}`,
   },
   {
     platform: "Messenger",
@@ -68,6 +69,8 @@ const socialMediaLinks = [
     platformUrl: "https://www.instagram.com/sharer/sharer.php?u=POST_LINK",
   },
 ];
+
+
 
 const FeedCard = ({ eachFeed }) => {
   const [liked, setLiked] = useState(false); 
@@ -101,7 +104,7 @@ const FeedCard = ({ eachFeed }) => {
 
   const handleCopy = () => {
     navigator.clipboard
-      .writeText(eachFeed.quote)
+      .writeText(appLink)
       .then(() => {
         setCopySuccess("Copied!");
         setTimeout(() => setCopySuccess(""), 2000); 
@@ -231,7 +234,7 @@ const FeedCard = ({ eachFeed }) => {
             <p className="page-link-text">Page Link</p>
 
             <div className="container">
-              <span className="text">{eachFeed.quote}</span>
+              <span className="text">{appLink}</span>
               <FaCopy
                 onClick={handleCopy}
                 className="copy-icon"
